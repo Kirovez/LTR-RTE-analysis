@@ -487,11 +487,9 @@ class LtrDiParser():
                 )
                 outFile.write(line)
 
-LD = LtrDiParser(sys.argv[1])#LtrDiParser(sys.argv[1])
-#genome_fasta = sys.argv[2]
-#LD.getFastaFullLtrs(genome_fasta)
-#LD.get_LTRs_fasta(genome_fasta, onlyFull = True)
-LD.getBED_LTR_coordinates( fullOnly = True)
-LD.getBEDfileDomains(from0 = False)
-LD.getClassification()
+LD = LtrDiParser(sys.argv[1])
+genome_fasta = sys.argv[2]
+LD.getFastaFullLtrs(genome_fasta)
+LD.get_LTRs_fasta(genome_fasta, onlyFull = True)
+
 
